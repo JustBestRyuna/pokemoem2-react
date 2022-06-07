@@ -1,0 +1,41 @@
+.PokedexSearchOptionItem {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  &:nth-child(odd) {
+    background: #f8f9fa;
+  }
+
+  .operator {
+    display: flex;
+    flex: 0.2;
+    font-size: 1.5rem;
+    font-family: source-code-pro, Menlo, Consolas, "Andale Mono", "Lucida Console",
+      monospace;
+  }
+  .option-field {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: right;
+  }
+  .option-term {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+  .remove {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+    cursor: pointer;
+    &:hover {
+      color: #ff8787;
+    }
+  }
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+}

@@ -1,0 +1,21 @@
+@import 'utils.scss';
+
+.PokedexSearchResultItem-window {
+  & + & {
+    border-top: 1px solid #dee2e6;
+  }
+}
+
+.PokedexSearchResultItem {
+  display: flex;
+  align-items: center;
+  .pokemon-name {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+    &:hover {
+      color: $indigo;
+    }
+  }
+}

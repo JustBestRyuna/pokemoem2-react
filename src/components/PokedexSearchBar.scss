@@ -1,0 +1,45 @@
+@import "utils.scss";
+
+.search-tip {
+  padding: 5px;
+  background: $yellow;
+}
+
+.PokedexSearchBar {
+  display: flex;
+  background: white;
+
+  .operator-search {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0.25rem;
+    font-size: 1rem;
+    font-family: source-code-pro, Menlo, Consolas, "Andale Mono", "Lucida Console",
+      monospace;
+  }
+  input {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    flex: 1;
+  }
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    background: #868e96;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s backkground ease-in;
+    &:hover {
+      background: #adb5bd;
+    }
+  }
+}

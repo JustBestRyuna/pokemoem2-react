@@ -1,0 +1,12 @@
+@import "utils.scss";
+
+.tip {
+  padding: 5px;
+  background: $green;
+}
+
+.PokedexSearchOptionList {
+  min-height: 60px;
+  max-height: 365px;
+  overflow-y: auto;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+    background: black;
+    padding: 1rem;
+
+    color: white;
+    font-size: 2rem;
+    &.inverted {
+        background: white;
+        color: black;
+        border: 1px solid black;
+    }
+}
+
+:global {
+    .aquatext {
+        font-weight: 800;
+        color: aqua;
+    }
+}
