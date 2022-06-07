@@ -7,12 +7,12 @@ import PokedexSearch from './PokedexSearch';
 
 const App = () => {
   const tagManagerArgs = {
-    gtmId: process.env.GTM_ID,
+    gtmId: process.env.REACT_APP_GTM_ID,
   };
 
   TagManager.initialize(tagManagerArgs);
 
-  ReactGA.initialize(process.env.GA_ID);
+  ReactGA.initialize(process.env.REACT_APP_GA_ID);
   ReactGA.send('pageview');
 
   return (

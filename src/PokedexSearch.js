@@ -252,7 +252,7 @@ const PokedexSearch = () => {
       }
       try {
         const response = await axios.get(
-          process.env.POKEMOEM_API +
+          process.env.REACT_APP_POKEMOEM_API +
             '/dex_api/pokedex/?display=num,name,nameko,iconfilename' +
             (queryParam && queryParam !== '' ? '&query=' + queryParam : ''),
         );
@@ -266,7 +266,7 @@ const PokedexSearch = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          process.env.POKEMOEM_API +
+          process.env.REACT_APP_POKEMOEM_API +
             '/dex_api/typechart/?display=index,damagetaken,nameko',
         );
         setTypechart(response.data);
@@ -279,7 +279,8 @@ const PokedexSearch = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          process.env.POKEMOEM_API + '/dex_api/abilities/?display=name,nameko',
+          process.env.REACT_APP_POKEMOEM_API +
+            '/dex_api/abilities/?display=name,nameko',
         );
         setAbilities(response.data);
       } catch (e) {
@@ -291,7 +292,7 @@ const PokedexSearch = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          process.env.POKEMOEM_API +
+          process.env.REACT_APP_POKEMOEM_API +
             '/dex_api/moves/?display=index,name,nameko&query=%2Bisz__isnull:%2Dismax:true',
         );
         const movesList = [...response.data];
