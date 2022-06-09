@@ -1,0 +1,32 @@
+@import "utils.scss";
+
+.field-name {
+  background: #f8f9fa;
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+  float: left;
+  width: 98%;
+  height: 1.25rem;
+  padding: 3px;
+}
+.field-select {
+  background: none;
+  outline: none;
+  border: none;
+  color: black;
+  float: left;
+  @media #{$phone} {
+	width: 48.5%;
+  }
+  @media #{$desktop} {
+    width: 32.5%;
+  }
+  height: 1.5rem;
+  padding: 2px;
+  cursor: pointer;
+  transition: 0.1s background ease-in;
+  &:hover {
+    background: #f8f9fa;
+  }
+}

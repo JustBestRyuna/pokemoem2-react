@@ -1,5 +1,4 @@
-$phone: "only screen and (max-width : 769px)";
-$desktop: "screen and (min-width : 769px)";
+@import "utils.scss";
 
 .PokedexSearchTemplate {
   @media #{$phone} {

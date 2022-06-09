@@ -1,0 +1,33 @@
+@import "utils.scss";
+
+.SearchBar {
+  background: white;
+  input {
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 1rem;
+    flex: 1;
+    padding: 0.25rem;
+    line-height: 1.5;
+    width: 100%;
+  }
+  .fields {
+    background: none;
+    overflow-y: auto;
+  }
+  .learnset-submit {
+    padding: 3px;
+    background: $blue;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    float: left;
+    width: 98.5%;
+    height: 1.25rem;
+    &:hover {
+      background: $indigo;
+    }
+  }
+}
